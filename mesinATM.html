@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Indonesia</title>
+    <link rel="stylesheet" href="mesinATM.css">
+</head>
+<body>
+    <div id="atm-container">
+        <h2>ATM Pintar</h2>
+        <label for="pin">Masukkan PIN:</label>
+        <input type="password" id="pin" maxlength="4">
+        <br><br>
+        <button onclick="checkPin()">Enter</button>
+        <br><br>
+        <div id="result"></div>
+
+        <div id="menu" style="display: none;">
+            <h3>Menu:</h3>
+            <button onclick="checkSaldo()">Check Saldo</button>
+            <button onclick="setorTunai()">Setor Tunai</button>
+            <button onclick="tarikTunai()">Tarik Tunai</button>
+            <button onclick="keluar()">Keluar</button>
+          </div>
+        
+        <div id="balance-container" style="display: none;">
+            <h3>Saldo Anda</h3>
+            <div id="balance">0</div>
+        </div>
+
+
+    <script src="mesinATM.js"></script>
+</body>
+</html>
